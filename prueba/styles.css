@@ -3,32 +3,43 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: rgb(238, 238, 238);
 }
 #Formulario{
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  border: 2px solid #000;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #232323
+  gap: 15px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 1px 3px 11px -4px rgba(0, 0, 0, 0.51);
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#Formulario h1{
+  color: gray;
+  text-align: center;
+  margin: auto;
 }
 #Formulario label{
-  color: white;
+  color: gray;
 }
 #Formulario input{
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 1px solid #ccc;
 }
 #Formulario button{
   padding: 10px 25px;
+  color: white;
   border: none;
+  background-color: #09f;
   border-radius: 5px;
   transition: .3s ease;
 }
 #Formulario button:hover{
-  background-color: #000;
+  background-color: gray;
   color: white;
   cursor: pointer;
 }

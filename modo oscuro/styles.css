@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+}
+#carta{
+    max-width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
+.dark-mode{
+    background-color: white;
+}
+.dark-mode #carta{
+    color: rgb(233, 232, 232);
+    background-color: #121212;
+}
+.dark-mode #carta h1{
+    color: white;
+}
+.dark-mode #carta strong{
+    color: white
+}
+.dark-mode #boton{
+    background-color: rgb(250, 181, 53);
+    color: black;
+}
+#carta h1{
+    margin-bottom: 20px;
+    color: black;
+}
+#carta strong{
+    color: black;
+}
+#boton{
+    margin-top: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: white;
+    background-color: #09f;
+}

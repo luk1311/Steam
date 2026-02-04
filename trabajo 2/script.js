@@ -1,4 +1,5 @@
-let temp= prompt("Ingrese la temperatura en grados Celsius:");
+const tempInput = document.getElementById("tempInput");
+
 
 function temperatura(temp){
     if(isNaN(temp)){
@@ -25,6 +26,9 @@ function temperatura(temp){
             alert("MUY CALUROSO!!!!!");
         }
 }
+function enviarTemperatura() {
+    const tempValue = parseFloat(tempInput.value);
+    temperatura(tempValue);
+}
 
-
-temperatura(temp);
+temperatura(tempInput.value);

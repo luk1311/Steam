@@ -1,0 +1,14 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#boton{
+    padding: 25px;
+    border-radius: 7px;
+    border: none;
+    color : white;
+    background-color: #09f;
+    font-size: 20px;
+}

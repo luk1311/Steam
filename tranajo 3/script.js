@@ -1,13 +1,13 @@
 let estado = false;
-const boton= document.getElementById("boton");
 
 function cambiar (){
+    const boton= document.getElementById("boton");
+
     if(estado===false){
-        boton.innerText("Sin presionar")
+        boton.innerText= "Presionar";
         estado= true;
     } else{
-        boton.innerText("Presionado");
+        boton.innerText= "Presionado";
         estado= false;
     }
 }
-cambiar()

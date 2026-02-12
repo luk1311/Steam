@@ -5,7 +5,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
-#boton{
+.boton{
     margin-top: 20px;
     width: 100px;
     height: 50px;

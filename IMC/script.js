@@ -14,20 +14,27 @@ function calcularIMC() {
     const resultado = document.getElementById('resultado');
     
     resultado.innerText = `Tu IMC es: ${imc.toFixed(2)}`;
-
+    const number = document.getElementById('number');
         if (imc <= 16) {
-            resultado.innerText = " desnutrición severa, IMC: "+ imc.toFixed(1);
+            number.style.color = "red";
+            number.innerText = imc.toFixed(1);
         } else if (imc <= 18.5) {
-            resultado.innerText = " desnutrición moderada, IMC: "+ imc.toFixed(1);
+            number.style.color = "orange";
+            number.innerText = imc.toFixed(1);
         } else if (imc <= 22) {
-            resultado.innerText = " bajo peso, IMC: "+ imc.toFixed(1);
+            number.style.color = "yellow";
+            number.innerText = imc.toFixed(1);
         } else if (imc <= 24.5) {
-            resultado.innerText = " peso ideal, IMC: "+ imc.toFixed(1);
+            number.style.color = "green";
+            number.innerText = imc.toFixed(1);
         } else if (imc <= 35) {
-            resultado.innerText = " obesidad tipo 1, IMC: "+ imc.toFixed(1);
+            number.style.color = "orange";
+            number.innerText = imc.toFixed(1);
         } else if (imc <= 40) {
-            resultado.innerText = " obesidad tipo 2, IMC: "+ imc.toFixed(1);
+            number.style.color = "lightred";
+            number.innerText = imc.toFixed(1);
         } else {
-            resultado.innerText = " obesidad tipo 3, IMC: "+ imc.toFixed(1);
+            number.style.color = "red";
+            number.innerText = imc.toFixed(1);
         }
 }

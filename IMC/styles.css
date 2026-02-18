@@ -31,3 +31,8 @@ body{
     font-size: 16px;
     cursor: pointer;
 }
+.valores{
+    text-align: center;
+    font-size: 18px;
+    margin: 15px 0;
+}

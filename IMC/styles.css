@@ -36,3 +36,10 @@ body{
     font-size: 18px;
     margin: 15px 0;
 }
+#imagen{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}

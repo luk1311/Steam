@@ -5,17 +5,18 @@ function calcularIMC() {
     const pesoValue = parseFloat(peso.value);
     const alturaValue = parseFloat(altura.value);
 
-    if (isNaN(pesoValue) || isNaN(alturaValue) || alturaValue <= 0) {
+    if (isNaN(pesoValue)  || isNaN(alturaValue) || alturaValue <= 0) {
         alert("Por favor, ingresa valores válidos para peso y altura.");
         return;
-    }
+    }           
 
     const imc = pesoValue / (alturaValue * alturaValue);
     const resultado = document.getElementById('resultado');
-    
+    const imagen = document.getElementById('imagen');
     
     const number = document.getElementById('number');
         if (imc <= 16) {
+            imagen.src = "/img/flaco.avif";
             resultado.innerText = "Desnutrición severa";
             number.style.color = "red";
             number.innerText = imc.toFixed(1);

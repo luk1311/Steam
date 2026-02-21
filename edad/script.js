@@ -1,5 +1,7 @@
 const fechaInput = document.getElementById("fecha");
 const resultado = document.getElementById("resultado");
+
+
 function calcular() {
     const nacimiento = new Date(fechaInput.value);
     const hoy = new Date();
@@ -13,17 +15,20 @@ function calcular() {
     if (isNaN(nacimiento)) {
         alert("Por favor, ingresa una fecha válida.");
         return;
-    } else if (edad < 0) {
-        resultado.innerText = "¡Aún no has nacido!";
-        return;    
-    }
-    if (mes < 0 || (mes === 0 && hoy.getDate() <= nacimiento.getDate())) {
-        edad--;
-        resultado.innerText = "Tu edad es: " + edad + " años";
     } 
+    if (mes <= 0 || (mes === 0 && hoy.getDate() <= nacimiento.getDate())) {
+        edad--;
+    } 
+    if (edad < 0) {
+        resultado.innerText = "¡Aún no has nacido!";
+    
+    }else {
+        resultado.innerText = "Tu edad es: " + edad + " años";
+    }
+   
     if (mes === 0 && hoy.getDate() === nacimiento.getUTCDate()) {
         resultado.innerText = "¡Feliz cumpleaños! Hoy cumples " + edad + " años.";
         return;
-    }
+    } 
    
 }

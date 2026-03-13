@@ -4,6 +4,32 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+     background-color: #f0f0f0;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+main p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 7px;
+    font-size: 18px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .boton{
     margin-top: 20px;
@@ -15,4 +41,13 @@ body{
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+}
+#historial{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }

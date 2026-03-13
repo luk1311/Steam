@@ -7,18 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input type="number" id="num1">
-    <input type="number" id="num2">
-    <div>
-        <button class="boton" onclick="sumar()">+</button>
-        <button class="boton" onclick="restar()">-</button>
-        <button class="boton" onclick="multiplicar()">x</button>   
-    </div>
-     
+    <main>
+        <div id="container">
+            <h1>Calculadora</h1>
+            <input type="number" id="num1">
+            <input type="number" id="num2">
 
-    <h2>Resultado</h2>
-    <p id="resultado"></p>
+             <div id="operaciones">
+                <button class="boton" onclick="sumar()">+</button>
+                <button class="boton" onclick="restar()">-</button>
+                <button class="boton" onclick="multiplicar()">x</button>   
+            </div>
+        
+        </div>
 
+            
+        <div id="historial">
+            <h2>HISTORIAL</h2>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
